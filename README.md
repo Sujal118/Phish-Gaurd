@@ -59,7 +59,7 @@ The engine is completely rule-based and avoids ML hallucination, ensuring absolu
 ### 1. Backend Setup
 Clone the repository and install the Python dependencies:
 ```bash
-git clone https://github.com/yourusername/phishguard.git
+git clone https://github.com/Sujal118/Phish-Guard.git
 cd phishguard/backend
 pip install -r requirements.txt
 ```
