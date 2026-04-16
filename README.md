@@ -107,7 +107,3 @@ We have provided sample emails specifically designed to trigger the detection mo
 
 ---
 
-<div align="center">
-<i>Built for the Cybersecurity Track @ Resonance'26</i><br>
-<i>Department of CSE (AI & ML), VIT Pune Bibwewadi</i>
-</div>
