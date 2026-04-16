@@ -1,0 +1,470 @@
+/* ============================================
+   PhishGuard — Custom Styles
+   Premium dark theme with glassmorphism
+   ============================================ */
+
+:root {
+    --bg-primary: #0a0a1a;
+    --bg-secondary: #111128;
+    --bg-card: rgba(20, 20, 50, 0.7);
+    --bg-glass: rgba(255, 255, 255, 0.05);
+    --accent-primary: #6c5ce7;
+    --accent-secondary: #00cec9;
+    --accent-danger: #e74c3c;
+    --accent-warning: #f39c12;
+    --accent-success: #27ae60;
+    --text-primary: #f0f0f5;
+    --text-secondary: #a0a0c0;
+    --text-muted: #6a6a8a;
+    --border-color: rgba(108, 92, 231, 0.2);
+    --shadow-glow: 0 0 30px rgba(108, 92, 231, 0.15);
+    --radius: 16px;
+    --radius-sm: 10px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Background gradient animation */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(108, 92, 231, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(0, 206, 201, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(231, 76, 60, 0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+#root {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   Header / Navbar
+   ============================================ */
+.phishguard-header {
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.phishguard-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.phishguard-logo .shield-icon {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+/* ============================================
+   Navigation Tabs
+   ============================================ */
+.nav-tabs-custom {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bg-glass);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.nav-tab {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-tab:hover {
+    background: rgba(108, 92, 231, 0.1);
+    color: var(--text-primary);
+}
+
+.nav-tab.active {
+    background: var(--accent-primary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+/* ============================================
+   Cards (Glassmorphism)
+   ============================================ */
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-glow);
+    transition: var(--transition);
+}
+
+.glass-card:hover {
+    border-color: rgba(108, 92, 231, 0.4);
+    box-shadow: 0 0 40px rgba(108, 92, 231, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   Upload Zone
+   ============================================ */
+.upload-zone {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius);
+    padding: 3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    background: var(--bg-glass);
+}
+
+.upload-zone:hover,
+.upload-zone.drag-active {
+    border-color: var(--accent-primary);
+    background: rgba(108, 92, 231, 0.05);
+}
+
+.upload-zone i {
+    font-size: 3rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+}
+
+.upload-zone h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.upload-zone p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   Score Card
+   ============================================ */
+.score-display {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1;
+}
+
+.score-display.low { color: var(--accent-success); }
+.score-display.medium { color: var(--accent-warning); }
+.score-display.high { color: var(--accent-danger); }
+
+.score-ring {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    position: relative;
+}
+
+.score-ring::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 6px;
+    background: conic-gradient(
+        var(--accent-success) 0%,
+        var(--accent-warning) 50%,
+        var(--accent-danger) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+/* ============================================
+   Breakdown Bars
+   ============================================ */
+.breakdown-bar {
+    margin-bottom: 1rem;
+}
+
+.breakdown-bar .label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.breakdown-bar .bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.breakdown-bar .bar .fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.fill.yellow { background: linear-gradient(90deg, #f39c12, #f1c40f); }
+.fill.red { background: linear-gradient(90deg, #e74c3c, #c0392b); }
+
+/* ============================================
+   Threat Feed
+   ============================================ */
+.threat-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    transition: var(--transition);
+}
+
+.threat-item:hover {
+    background: rgba(108, 92, 231, 0.05);
+}
+
+.threat-badge {
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.threat-badge.high {
+    background: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+}
+
+.threat-badge.medium {
+    background: rgba(243, 156, 18, 0.15);
+    color: #f39c12;
+}
+
+.threat-badge.low {
+    background: rgba(39, 174, 96, 0.15);
+    color: #27ae60;
+}
+
+/* ============================================
+   Forge Lab Diff View
+   ============================================ */
+.diff-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.diff-side {
+    padding: 1.5rem;
+    border-radius: var(--radius-sm);
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    overflow-x: auto;
+}
+
+.diff-side.original {
+    background: rgba(39, 174, 96, 0.05);
+    border: 1px solid rgba(39, 174, 96, 0.2);
+}
+
+.diff-side.forged {
+    background: rgba(231, 76, 60, 0.05);
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+.diff-highlight {
+    background: rgba(231, 76, 60, 0.2);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.btn-phish {
+    background: linear-gradient(135deg, var(--accent-primary), #5b4cd4);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-phish:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3);
+}
+
+.btn-phish:active {
+    transform: translateY(0);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-outline:hover {
+    border-color: var(--accent-primary);
+    background: rgba(108, 92, 231, 0.1);
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-in {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.loading-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ============================================
+   Layout
+   ============================================ */
+.dashboard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 1rem;
+    }
+
+    .diff-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-tabs-custom {
+        flex-wrap: wrap;
+    }
+
+    .score-display {
+        font-size: 3rem;
+    }
+}
+
+/* ============================================
+   Scrollbar
+   ============================================ */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5b4cd4;
+}

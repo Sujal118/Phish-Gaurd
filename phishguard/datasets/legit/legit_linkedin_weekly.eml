@@ -1,0 +1,69 @@
+Delivered-To: tejas@gmail.com
+Received: from mail-lj1-f180.google.com (mail-lj1-f180.google.com [209.85.208.180])
+        by mx.google.com with ESMTPS id c789d012.345.2026.04.14.08.10.05
+        for <tejas@gmail.com>
+        (Google Transport Security);
+        Mon, 14 Apr 2026 08:10:06 -0700 (PDT)
+Authentication-Results: mx.google.com;
+        dkim=pass header.d=linkedin.com;
+        spf=pass (google.com: domain of messages-noreply@linkedin.com designates 209.85.208.180 as permitted sender);
+        dmarc=pass (p=REJECT) header.from=linkedin.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=linkedin.com;
+        s=proddkim1024; t=1713092405;
+        h=from:to:subject:date:message-id;
+        bh=linkedinhash==;
+        b=linkedinValidSig==
+From: LinkedIn <messages-noreply@linkedin.com>
+To: tejas@gmail.com
+Subject: Tejas, 5 people viewed your profile this week
+Date: Mon, 14 Apr 2026 15:10:04 +0000
+Message-ID: <linkedin-weekly-legit-003@linkedin.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+List-Unsubscribe: <https://www.linkedin.com/e/v2?e=1a2b3c&t=unsubscribe>
+
+<html>
+<body style="font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; background: #f3f2ef; margin: 0; padding: 20px;">
+<div style="max-width: 560px; margin: 0 auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+<div style="background: #0a66c2; padding: 16px 24px;">
+<span style="color: white; font-size: 22px; font-weight: 700;">Linked<span style="font-weight: 300;">in</span></span>
+</div>
+<div style="padding: 24px;">
+<h2 style="color: #191919; font-size: 18px; margin: 0 0 8px;">Your weekly profile stats</h2>
+<p style="color: #666; font-size: 14px; margin: 0 0 20px;">Here's a summary of your LinkedIn activity this week.</p>
+
+<div style="display: flex; gap: 12px; margin: 20px 0;">
+<div style="flex: 1; background: #f8f8f8; border-radius: 8px; padding: 16px; text-align: center;">
+<p style="font-size: 28px; font-weight: 700; color: #0a66c2; margin: 0;">5</p>
+<p style="font-size: 13px; color: #666; margin: 4px 0 0;">Profile views</p>
+</div>
+<div style="flex: 1; background: #f8f8f8; border-radius: 8px; padding: 16px; text-align: center;">
+<p style="font-size: 28px; font-weight: 700; color: #0a66c2; margin: 0;">12</p>
+<p style="font-size: 13px; color: #666; margin: 4px 0 0;">Post impressions</p>
+</div>
+<div style="flex: 1; background: #f8f8f8; border-radius: 8px; padding: 16px; text-align: center;">
+<p style="font-size: 28px; font-weight: 700; color: #0a66c2; margin: 0;">3</p>
+<p style="font-size: 13px; color: #666; margin: 4px 0 0;">Search appearances</p>
+</div>
+</div>
+
+<p style="color: #333; font-size: 14px; line-height: 1.5;">People from <strong>VIT Pune</strong>, <strong>Infosys</strong>, and <strong>TCS</strong> viewed your profile. Keep your profile updated to attract more views!</p>
+
+<p style="text-align: center; margin: 24px 0;">
+<a href="https://www.linkedin.com/me/profile-views/" 
+   style="background: #0a66c2; color: white; padding: 10px 24px; text-decoration: none; border-radius: 20px; font-size: 14px; font-weight: 600;">
+   View all profile viewers
+</a>
+</p>
+
+<hr style="border: none; border-top: 1px solid #e8e8e8; margin: 24px 0;">
+<p style="font-size: 11px; color: #999; text-align: center;">
+LinkedIn Corporation, 1000 W Maude Ave, Sunnyvale, CA 94085<br>
+You're receiving this email because you have a LinkedIn account.<br>
+<a href="https://www.linkedin.com/e/v2?e=1a2b3c&t=unsubscribe" style="color: #0a66c2;">Unsubscribe</a> | 
+<a href="https://www.linkedin.com/help/linkedin" style="color: #0a66c2;">Help</a>
+</p>
+</div>
+</div>
+</body>
+</html>

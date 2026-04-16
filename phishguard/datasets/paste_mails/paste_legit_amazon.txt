@@ -1,0 +1,65 @@
+Delivered-To: tejas@gmail.com
+Received: from a]27-99.smtp-out.amazonses.com (a27-99.smtp-out.amazonses.com [54.240.27.99])
+        by mx.google.com with ESMTPS id b1234.56.2026.04.15.10.22.15
+        for <tejas@gmail.com>
+        (Google Transport Security);
+        Tue, 15 Apr 2026 10:22:16 -0700 (PDT)
+Authentication-Results: mx.google.com;
+        dkim=pass header.d=amazon.com;
+        spf=pass (google.com: domain of shipping-updates@amazon.com designates 54.240.27.99 as permitted sender);
+        dmarc=pass (p=QUARANTINE) header.from=amazon.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=amazon.com;
+        s=ses2024; t=1713186135;
+        h=from:to:subject:date:message-id;
+        bh=validhash123==;
+        b=validSignatureAmazon==
+From: Amazon.com <shipping-updates@amazon.com>
+To: tejas@gmail.com
+Subject: Your Amazon order has shipped! #402-1234567-8901234
+Date: Tue, 15 Apr 2026 17:22:14 +0000
+Message-ID: <amzn-ship-legit-002@amazon.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+List-Unsubscribe: <https://www.amazon.in/gp/unsubscribe>
+
+<html>
+<body style="font-family: Arial, sans-serif; background: #eaeded; margin: 0; padding: 20px;">
+<div style="max-width: 600px; margin: 0 auto; background: white;">
+<div style="background: #232f3e; padding: 15px 20px;">
+<img src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/amazon-logo-white.png" height="30" alt="Amazon">
+</div>
+<div style="padding: 25px;">
+<h2 style="color: #111; font-size: 20px;">Your package is on its way!</h2>
+<p style="color: #333; line-height: 1.6;">Hi Tejas,</p>
+<p style="color: #333; line-height: 1.6;">Great news! Your order <strong>#402-1234567-8901234</strong> has been shipped and is on its way to you.</p>
+
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 16px 0;">
+<p style="margin: 6px 0; color: #555;"><strong>Order placed:</strong> April 13, 2026</p>
+<p style="margin: 6px 0; color: #555;"><strong>Shipped on:</strong> April 15, 2026</p>
+<p style="margin: 6px 0; color: #555;"><strong>Estimated delivery:</strong> April 18–19, 2026</p>
+<p style="margin: 6px 0; color: #555;"><strong>Carrier:</strong> Amazon Transportation</p>
+</div>
+
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 16px 0;">
+<p style="margin: 4px 0;"><strong>Logitech MX Master 3S Wireless Mouse</strong></p>
+<p style="margin: 4px 0; color: #555;">Qty: 1 | Price: ₹7,495.00</p>
+</div>
+
+<p style="text-align: center;">
+<a href="https://www.amazon.in/gp/your-account/order-details?orderID=402-1234567-8901234" 
+   style="background: #ff9900; color: #111; padding: 10px 25px; text-decoration: none; border-radius: 4px; font-weight: bold;">
+   Track Your Package
+</a>
+</p>
+
+<hr style="border: none; border-top: 1px solid #eee; margin: 25px 0;">
+<p style="font-size: 11px; color: #888; text-align: center;">
+Amazon.in | Shipping Notifications<br>
+This email was sent from a notification-only address. Please do not reply.<br>
+<a href="https://www.amazon.in/gp/unsubscribe" style="color: #0066c0;">Unsubscribe</a> | 
+<a href="https://www.amazon.in/privacy" style="color: #0066c0;">Privacy Notice</a>
+</p>
+</div>
+</div>
+</body>
+</html>

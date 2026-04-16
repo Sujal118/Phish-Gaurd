@@ -1,0 +1,47 @@
+Delivered-To: victim@gmail.com
+Received: from mail-evil.phishnet.ru (mail-evil.phishnet.ru [185.234.72.19])
+        by mx.google.com with ESMTP id a1b2c3d4e5;
+        Wed, 16 Apr 2026 04:12:33 -0700 (PDT)
+Received: from localhost (unknown [10.0.0.1])
+        by mail-evil.phishnet.ru (Postfix) with ESMTP id ABC123;
+        Wed, 16 Apr 2026 11:12:30 +0000 (UTC)
+From: PayPal Security <security@paypa1.com>
+Reply-To: hacker-recovery@protonmail.com
+To: victim@gmail.com
+Subject: [URGENT] Your PayPal Account Has Been Limited - Action Required Immediately
+Date: Wed, 16 Apr 2026 11:12:30 +0000
+Message-ID: <fake-msg-001@paypa1.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+X-Mailer: PHPMailer 6.0.0
+X-Priority: 1
+
+<html>
+<body style="font-family: Arial, sans-serif;">
+<div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+<img src="https://paypa1.com/logo.png" alt="PayPal" width="150">
+<h2 style="color: #003087;">Your PayPal Account Has Been Limited</h2>
+<p>Dear Valued Customer,</p>
+<p>We've noticed unusual activity on your <strong>PаyPаl</strong> account. Your account access has been limited until you verify your identity.</p>
+<p>We detected the following suspicious activity:</p>
+<ul>
+<li>Login attempt from unrecognized device in Moscow, Russia</li>
+<li>Attempted transfer of $2,499.99 to an unknown recipient</li>
+<li>Multiple failed password attempts</li>
+</ul>
+<p><strong>You must verify your account within 24 hours or it will be permanently suspended.</strong></p>
+<p style="text-align: center;">
+<a href="http://paypa1-security-verify.com/login?id=victim@gmail.com&token=abc123" 
+   style="background-color: #0070ba; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-size: 16px;">
+   Verify Your Account Now
+</a>
+</p>
+<p style="color: #666; font-size: 12px;">If you don't verify within 24 hours, your account will be permanently closed and any remaining balance will be frozen.</p>
+<hr>
+<p style="font-size: 11px; color: #999;">
+This email was sent by PаyPаl, Inc. 2211 North First Street, San Jose, CА 95131<br>
+© 2026 PаyPаl. All rights reserved. Reference ID: PP-2026-FAKE-001
+</p>
+</div>
+</body>
+</html>
